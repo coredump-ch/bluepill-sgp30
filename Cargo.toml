@@ -1,0 +1,34 @@
+[package]
+name = "bluepill-sgp30"
+version = "0.1.0"
+authors = ["Danilo Bargen <mail@dbrgn.ch>"]
+description = "SGP30 sensor on the Blue Pill board, sending data to our SpaceAPI."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/coredump-ch/bluepill-sgp30"
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+lto = true
+debug = true
+
+[dependencies]
+
+[dependencies.cortex-m]
+version = "0.4"
+
+[dependencies.cortex-m-rt]
+version = "0.3"
+features = ["abort-on-panic"]
+
+[dependencies.cortex-m-semihosting]
+version = "0.2"
+
+[dependencies.sgp30]
+version = "0.1.1"
+
+[dependencies.stm32f103xx-hal]
+git = "https://github.com/ilya-epifanov/stm32f103xx-hal"
+branch = "i2c-support"
