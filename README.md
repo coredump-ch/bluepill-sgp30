@@ -3,7 +3,7 @@
 Query the SGP30 gas sensor on a Blue Pill devboard. The goal is to eventually
 being able to send this value to the SpaceAPI somehow.
 
-This crate is based on `cortex-m-quickstart`.
+- [Blue pill pinout](http://wiki.stm32duino.com/images/a/ae/Bluepillpinout.gif)
 
 ## License
 
